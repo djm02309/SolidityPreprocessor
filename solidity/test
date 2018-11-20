@@ -1,7 +1,0 @@
-pragma solidity ^0.4.5;
-
-contract Caller {
-    function callTest(Test test) public {
-       nonfallback test.call(0xabcdef01, NONFALLBACK); // hash does not exist
-    }
-}
