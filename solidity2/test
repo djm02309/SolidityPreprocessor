@@ -1,0 +1,14 @@
+pragma solidity ^0.4.5;
+
+contract Test{
+	function () public{ x = 1;}
+ 	uint x;
+}
+contract Sink {
+	function() public payable {}
+}
+contract Caller {
+    function callTest(Test test) public {
+        nonfallback test.call(0xabcdef01); // hash does not exist
+    }
+}

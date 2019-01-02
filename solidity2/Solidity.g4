@@ -153,7 +153,7 @@ expressionStatement
   : expression ';' ;
   
 nonFallbackStatement
-  : 'nonfallback' statement; 
+  : 'NONFALLBACK' statement; 
   
 ifStatement
   : 'if' '(' expression ')' statement ( 'else' statement )? ;
@@ -408,7 +408,7 @@ PrivateKeyword : 'private' ;
 PublicKeyword : 'public' ;
 PureKeyword : 'pure' ;
 ViewKeyword : 'view' ;
-NonFallbackKeyword : 'nonfallback' ;
+NonFallbackKeyword : 'NONFALLBACK' ;
 
 Identifier
   : IdentifierStart IdentifierPart* ;
